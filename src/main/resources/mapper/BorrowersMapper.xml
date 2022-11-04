@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lixiaoxin.mapper.BorrowersMapper">
+
+    <resultMap id="BaseResultMap" type="com.lixiaoxin.enity.Borrowers">
+            <id property="id" column="id" jdbcType="VARCHAR"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="sex" column="sex" jdbcType="VARCHAR"/>
+            <result property="idtype" column="idtype" jdbcType="VARCHAR"/>
+            <result property="idcard" column="IDcard" jdbcType="VARCHAR"/>
+            <result property="vip" column="vip" jdbcType="INTEGER"/>
+            <result property="brrownum" column="brrownum" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,sex,
+        idtype,IDcard,vip,
+        brrownum
+    </sql>
+</mapper>

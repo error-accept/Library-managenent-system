@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lixiaoxin.mapper.BorrowMapper">
+
+    <resultMap id="BaseResultMap" type="com.lixiaoxin.enity.Borrow">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="bookid" column="bookid" jdbcType="INTEGER"/>
+            <result property="userid" column="userid" jdbcType="VARCHAR"/>
+            <result property="brrowtime" column="brrowtime" jdbcType="TIMESTAMP"/>
+            <result property="days" column="days" jdbcType="INTEGER"/>
+            <result property="backtime" column="backtime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,bookid,userid,
+        brrowtime,days,backtime
+    </sql>
+</mapper>

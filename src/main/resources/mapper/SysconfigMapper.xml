@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lixiaoxin.mapper.SysconfigMapper">
+
+    <resultMap id="BaseResultMap" type="com.lixiaoxin.enity.Sysconfig">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <id property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="address" column="address" jdbcType="VARCHAR"/>
+            <result property="adminname" column="adminName" jdbcType="VARCHAR"/>
+            <result property="time" column="time" jdbcType="TIMESTAMP"/>
+            <result property="vip" column="vip" jdbcType="INTEGER"/>
+            <result property="backtime" column="backtime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,address,
+        adminName,time,vip,
+        backtime
+    </sql>
+</mapper>
